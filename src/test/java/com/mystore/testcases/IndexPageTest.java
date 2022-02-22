@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.mystore.base.BaseClass;
 import com.mystore.pageobjects.IndexPage;
+import com.mystore.utility.Log;
 
 public class IndexPageTest extends BaseClass {
 	
@@ -21,8 +22,12 @@ public class IndexPageTest extends BaseClass {
 	
 	@Test(groups = "Smoke")
 	public void verifyTitle() {
+		Log.startTestCase("verify Title");
 		String title = indexpage.getMyStoreTitle();
-		Assert.assertEquals(title, "My Store");
+		//Assert.assertEquals(title, "My Store");
+		Assert.assertEquals(title, "My Store!!");
+		Log.endTestCase("verify Title");
+
 	}
 
 }

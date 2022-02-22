@@ -3,7 +3,6 @@
 <suite name="Suite">
 <listeners>
 	<listener class-name = "com.mystore.utility.ListenerClass"></listener>
-		
 </listeners>
   <test thread-count="5" name="Test_All">
   	  <parameter name = "browser" value = "Chrome"></parameter>

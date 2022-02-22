@@ -23,7 +23,8 @@ public class HomePageTest extends BaseClass{
 		String password = prop.getProperty("password");
 		homePage = loginPage.login(username, password);
 		boolean result = homePage.validateMyishList();
-		Assert.assertTrue(result);
+		Assert.assertTrue(false);
+		//Assert.assertTrue(result);
 	}
 	
 	
